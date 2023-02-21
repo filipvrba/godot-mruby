@@ -1,0 +1,15 @@
+# Binaries for programs and plugins
+main
+godot-mruby
+
+*.exe
+*.exe~
+*.so
+*.dylib
+*.dll
+
+# Ignore common editor/system specific metadata
+.DS_Store
+.idea/
+.vscode/
+*.iml

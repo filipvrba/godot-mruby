@@ -1,0 +1,13 @@
+#!/bin/bash
+
+name_lib=libmruby.so
+
+path_bgp='sandbox/bin'
+path_build=dist/$name_lib
+path_cp=Documents/godot/$path_bgp/$name_lib
+
+v -shared -o $path_build app.v
+echo "$(date +"%I:%M:%S") [godot-mruby] build $path_build" &&
+cp dist/libmruby.so $HOME/$path_cp
+echo "$(date +"%I:%M:%S") [godot-mruby] copied ~/$path_cp" &&
+echo "$(date +"%I:%M:%S") [godot-mruby] done"
